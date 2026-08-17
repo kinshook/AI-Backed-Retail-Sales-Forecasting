@@ -1,1 +1,1 @@
-# AI-backed-Retail-Sales-Forecasting
+# AI-Backed-Retail-Sales-Forecasting
