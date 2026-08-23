@@ -2,7 +2,7 @@ from sqlalchemy import create_engine, text
 from urllib.parse import quote_plus
 
 
-server = input()                           # r"DESKTOP-FI1PI5E\SHIVSHAKTI"                     #"SANJABOSS"
+server = input()                           
 DB = input("Enter the database name you wanto create: ")
 
 
