@@ -7,10 +7,10 @@ import logging
 import time
 
 
-server= "localhost"
-database="retail_Proj"
+server= "your_server"
+database="your_db_name"
 
-logging.basicConfig(filename='data_cleaning.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+logging.basicConfig(filename='data_cleaning.log', filemode='w', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger()
 
 logger.info("Connecting to database...")
