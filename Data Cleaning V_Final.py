@@ -102,8 +102,8 @@ def create_retail_summary(sales_df, adjust_df, engine):
     retail_summary['Charges_Pounds'] = retail_summary['Charges_Pounds'].fillna(0)
 
     # true profit per row = revenue minus any charges on same invoice
-    retail_summary['True_Profit'] = (
-        retail_summary['Revenue'] + retail_summary['Charges_Pounds']
+      retail_summary['True_Profit'] = (
+        retail_summary['Revenue'] + retail_summary['Charges_Pounds']  if retail_summary['Revenue']<=0 else retail_summary['Revenue'] - retail_summary['Charges_Pounds']
     )
 
 
