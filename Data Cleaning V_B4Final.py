@@ -137,14 +137,6 @@ def create_retail_summary(sales_df, adjust_df, engine):
 
 
 
-    # # ingest both tables
-    # retail_summary.to_sql(
-    #     "Retail_Summary", engine,
-    #     if_exists="replace", index=False)
-
-    # adjust_df.to_sql(
-    #     "Revenue_Adjustments", engine,
-    #     if_exists="replace", index=False)
 
     end = time.time()
     logger.info(f"Retail_Summary ingested: {len(retail_summary)} rows | "
@@ -153,21 +145,6 @@ def create_retail_summary(sales_df, adjust_df, engine):
                 f"Completed in {end-start:.2f}s")
 
     return retail_summary
-
-
-# if __name__ == "__main__":
-#     pd.set_option("display.width", os.get_terminal_size().columns)
-#     pd.set_option("display.max_columns", None)
-
-
-
-#     merged_df = merge_tables(df)
-#     sales_df, adjust_df     = merged_table_Cleaning(merged_df)
-#     retail_summary          = create_retail_summary(sales_df, adjust_df, conn_engine)
-
-#     print(f"Retail_Summary:       {len(retail_summary)} rows")
-#     print(f"Revenue_Adjustments:  {len(adjust_df)} rows")
-#     print(retail_summary[['Invoice', 'Revenue', 'Charges_INR', 'True_Profit']].head(10))
 
 
 
