@@ -7,3 +7,4 @@ To build a fully automated, end-to-end data analytics pipeline on the UCI Online
 •	Segments customers using RFM scoring and KMeans clustering to support targeted marketing decisions.
 •	Forecasts monthly revenue and product demand 12 months; model yet to be finalized based on accuracy.
 •	Delivers findings via an interactive Power BI dashboard and a weekly auto-generated PDF report — with zero manual steps after initial setup.
+![Uploading Pipeline workflow for Readme.png…]()
